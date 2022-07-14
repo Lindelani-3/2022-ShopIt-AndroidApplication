@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.developerdiindy.shopit.presentation.home.R;
-import com.developerdiindy.shopit.presentation.home.databinding.FragmentHomeBinding;
+import com.developerdiindy.shopit.databinding.FragmentHomeBinding;
+
 
 /**
  * A placeholder fragment containing a simple view.

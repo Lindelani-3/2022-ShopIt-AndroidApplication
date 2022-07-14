@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.developerdiindy.shopit.presentation.inventory.R;
+import com.developerdiindy.shopit.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

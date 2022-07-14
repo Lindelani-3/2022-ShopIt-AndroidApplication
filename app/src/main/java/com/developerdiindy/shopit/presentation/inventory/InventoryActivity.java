@@ -2,6 +2,7 @@ package com.developerdiindy.shopit.presentation.inventory;
 
 import android.os.Bundle;
 
+import com.developerdiindy.shopit.databinding.ActivityInventoryBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
@@ -14,7 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.developerdiindy.shopit.presentation.inventory.ui.main.SectionsPagerAdapter;
-import com.developerdiindy.shopit.presentation.inventory.databinding.ActivityInventoryBinding;
 
 public class InventoryActivity extends AppCompatActivity {
 
@@ -32,7 +32,9 @@ public class InventoryActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
+
+
+        /* FloatingActionButton fab = binding.fab;
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,5 +43,6 @@ public class InventoryActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+         */
     }
 }
