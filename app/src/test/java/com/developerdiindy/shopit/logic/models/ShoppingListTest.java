@@ -22,13 +22,19 @@ class ShoppingListTest {
 
     @Test
     public void setID() {
+        myShoppingList.setID(001);
+        myShoppingList.setID(011);
+        assertEquals(011, myShoppingList.getID());
     }
 
     @Test
     public void getName() {
+        assertEquals("No Name", myShoppingList.getName());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void setName() {
+        myShoppingList.setName("Friday");
+        assertEquals("Friday", myShoppingList.getName());
     }
 }
