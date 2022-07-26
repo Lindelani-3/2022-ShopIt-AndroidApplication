@@ -1,4 +1,9 @@
-version: 2
+version: 2.1
+
+orbs:
+  android: circleci/android@1.0.3
+  codecov: codecov/codecov@3.2.2
+  
 jobs:
   build:
     working_directory: ~/code
@@ -20,7 +25,16 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
-       
+
+- run:
+          name: Run Tests
+          command: ./gradlew lint test
+      - store_artifacts:
+          path: app/build/reports
+          destination: reports
+      - store_test_results:
+          path: app/build/test-results
+
       - run:
           name: Save test results
           command: |
